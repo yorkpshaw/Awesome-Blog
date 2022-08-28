@@ -8,10 +8,18 @@ body {
 }
 
 header {
-    padding: 12px;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    column-gap: 6rem;
+    padding: 30px;
 }
 
 footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-end: auto;
+    align-items: center;
+    column-gap: 5%;
     background-color: burlywood;
     margin-top: 24px;
     padding: 24px;
@@ -51,12 +59,16 @@ button {
 }
 
 .main-page-book-review {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
     background-color: white;
     border: 1px solid lightblue;
     padding: 24px;
 }
 
 .book-cover {
+    display: grid;
+    grid-row-end: span 5;
     width: 200px;
     height: auto;
 }
